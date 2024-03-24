@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlatefulAI Profile</title>
+</head>
+<body>
+<h1>Your PlatefulAI Profile</h1>
+<form action="/update_profile" method="POST">
+<label for="preferences">Dietary Preferences:</label>
+<select multiple name="preferences" id="preferences">
+<option value="vegetarian">Vegetarian</option>
+<option value="vegan">Vegan</option>
+<option value="gluten-free">Gluten-Free</option>
+<option value="lactose-free">Lactose-Free</option>
+</select>
+<br>
+<label for="restrictions">Dietary Restrictions:</label>
+<select multiple name="restrictions" id="restrictions">
+<option value="allergy-peanuts">Peanut Allergy</option>
+<option value="allergy-eggs">Egg Allergy</option>
+<option value="allergy-seafood">Seafood Allergy</option>
+</select>
+<br>
+<label for="goals">Nutritional Goals:</label>
+<select multiple name="goals" id="goals">
+<option value="weight-loss">Weight Loss</option>
+<option value="muscle-building">Muscle Building</option>
+<option value="healthy-eating">Healthy Eating</option>
+</select>
+<br>
+<input type="submit" value="Update Profile">
+</form>
+</body>
+</html>
+
+
