@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlatefulAI Recipes</title>
+</head>
+<body>
+<h1>PlatefulAI Recipes</h1>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Ingredients</th>
+<th>Instructions</th>
+<th>Calories</th>
+<th>Protein</th>
+<th>Carbohydrates</th>
+<th>Fat</th>
+</tr>
+</thead>
+<tbody>
+{% for recipe in recipes %}
+<tr>
+<td>{{ recipe['name'] }}</td>
+<td>{{ recipe['ingredients'] }}</td>
+<td>{{ recipe['instructions'] }}</td>
+<td>{{ recipe['calories'] }}</td>
+<td>{{ recipe['protein'] }}</td>
+<td>{{ recipe['carbohydrates'] }}</td>
+<td>{{ recipe['fat'] }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</body>
+</html>
+
+
